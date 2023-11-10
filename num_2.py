@@ -1,11 +1,8 @@
-result = []
 line_1 = set(input("Введите строку 1: "))
 line_2 = input("Введите строку 2: ")
 
 # Проверка на отсутствие вхождений i из 1-й строки во 2-ю
-for i in line_1:
-    if line_2.count(i) == 0:
-        result.append(i)
+result = line_1.difference(line_2)
 
 # Вывод результата проверки
 if len(result) == 0:
